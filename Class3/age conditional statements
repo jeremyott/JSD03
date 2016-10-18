@@ -1,0 +1,14 @@
+var currentAge = 25;
+
+if (currentAge>62) {
+console.log("You can drive!");
+}
+else if (currentAge>35) {
+console.log("you can run for president");
+}
+else if (currentAge>25) {
+console.log("You can rent a car");
+}
+else if (currentAge>21) {
+console.log("You can ")
+}

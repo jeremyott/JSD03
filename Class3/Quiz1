@@ -1,0 +1,37 @@
+1. Math.pow(4,3)
+2. dunno
+3. var n="bannana soup"
+var z= n.length
+4. var personOneSkills = ["HTML", "CSS", "JS", "RUBY"];
+var personOne = ["Mike", 31, "brown", personOneSkills];
+
+var personTwoSkills = ["JS", "JAVA", "C#", "C+"];
+var personTwo = ["Michelle", 30, "brown", personTwoSkills];
+
+var people = [personOne, personTwo];
+
+// 1. Using only the variable people, create two messages
+
+var messageOne;// Mike is 31 with brown eyes and knows HTML, CSS, JS and RUBY
+var messageTwo;// Michelle is 30 with brown eyes and knows JS, JAVA, C# and C+
+
+var messageOne = "people[0[0]]" is people [1[1]]
+
+// 2. Create personThree and personThreeSkills and add to people array
+
+5. var name, password = "Finneran";
+
+name = "Mike";
+name += " ";
+name += password;
+
+var email = "mike@email.com";
+email = email.replace("@email.com", "").toUpperCase();
+email = email + " ";
+email += name.replace("Mike", "");
+
+Name:
+Password:
+Email: Mike@email.com
+
+6. No idea
