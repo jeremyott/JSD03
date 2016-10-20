@@ -1,11 +1,53 @@
 //This is an array called gameOfThonesHouses.  It is an array made up of objects.  Each object represents a house in the game of thrones.  Each house has a name, wikiSuffix, and people.  People in a house is an array of objects.  Each object represents a person.  Each person has a name, description, imageSuffix, and wikiSuffix.
 
 // 1.  Get the first houses name
-// 2.  Get the Lannister houses wikiSuffix  
+function firstHouse(){
+console.log(gameOfThronesHouses[0].name);
+}
+
+// 2.  Get the Lannister houses wikiSuffix
+function getWiki(houseName){
+  for (i = 0; i < gameOfThronesHouses.length; i++) {
+    if (gameOfThronesHouses[i].name === houseName) {
+        console.log(gameOfThronesHouses[i].wikiSuffix)}
+    }
+}
+getWiki("Lannisters")
+
 // 3.  Get the name Catelyn (Tully) Stark
-// 4.  Get the fourth houses, second persons description  
+function personName(){
+  for (var i = 0; i < gameOfThronesHouses.length; i++) {
+    console.log(gameOfThronesHouses[i].people.name);
+}}
+
+function personName(){
+console.log(gameOfThronesHouses[6].people[0].name);
+}
+
+// 4.  Get the fourth houses, second persons description
+function getDescription(houseNum, personNum) {
+  for (var i = 0; i < gameOfThronesHouses.length; i++) {
+    if (gameOfThronesHouses[i+1] === gameOfThronesHouses[houseNum]){
+    return gameOfThronesHouses[i].name + gameOfThronesHouses[i].name.people[personNum];
+    }
+  }
+}
+
+function getDescription(houseNum, personNum) {
+  for (var i = 0; i < gameOfThronesHouses.length; i++) {
+    if (gameOfThronesHouses[i+1] === gameOfThronesHouses[houseNum]){
+      var houseName = gameOfThronesHouses[i].name;
+      var persName = gameOfThronesHouses[i].people[personNum].description;
+      return [houseName, persName]
+    }
+  }
+}
+
 // 5.  Get a list of all the houses names
+
+
 // 6.  Get a list of all the peoples names
+
 
 var gameOfThronesHouses = [
     {
@@ -274,4 +316,3 @@ var gameOfThronesHouses = [
       ]
     }
   ]
-
