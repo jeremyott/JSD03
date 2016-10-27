@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body {
+  font-family: sans-serif;
+}
+
+#controlPanel {
+  float: left;
+  padding-top: 30px;
+}
+
+.button {
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 90px 40px;
+  cursor: pointer;
+}
+
+#traffic-light {
+  height: 550px;
+  width: 200px;
+  float: left;
+  background-color: #333;
+  border-radius: 40px;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+.bulb {
+  height: 150px;
+  width: 150px;
+  background-color: #111;
+  border-radius: 50%;
+  margin: 25px auto;
+/*  transition: background 500ms;*/
+}
+    </style>
+  </head>
+  <body>
+    <div id="controlPanel">
+  <h1 id="stopButton" class="button">Stop</h1>
+  <h1 id="slowButton" class="button">Slow</h1>
+  <h1 id="goButton" class="button">Go</h1>
+</div>
+
+<div id="traffic-light">
+  <div id="stopLight" class="bulb"></div>
+  <div id="slowLight" class="bulb"></div>
+  <div id="goLight" class="bulb"></div>
+</div>
+
+<footer>
+<script>
+// turn on stop function
+function turnOnStopLight(){
+
+  // change background color of stop light to red
+  document.getElementById("stopLight").style.backgroundColor = "red";
+}
+function turnOnStopLight(){
+  // change background color of stop light to red
+  document.getElementById("stopLight").className = "stopOffClass";
+}
+function turnOffStopLight(){
+
+  // change background color of stop light to red
+  document.getElementByClassName("stopOffClass").style.backgroundColor = "black";
+}
+
+// turn on slow function
+function turnOnSlowLight(){
+
+  // change background color of slow light to yellow
+  document.getElementById("slowLight").style.backgroundColor = "yellow";
+}
+
+// turn on go function
+function turnOnGoLight(){
+
+  // change background color of go light to green
+  document.getElementById("goLight").style.backgroundColor = "green";
+}
+
+// set stop light click event
+
+document.getElementById("stopButton").onclick = turnOnStopLight;
+document.getElementByClassName("stopOffClass").onclick = turnOffStopLight;
+
+// set slow light click event
+document.getElementById("slowButton").onclick = turnOnSlowLight;
+
+// set go light click event
+document.getElementById("goButton").onclick = turnOnGoLight;
+
+
+</script>
+</footer>
+
+  </body>
+</html>

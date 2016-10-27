@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<table style="width:50%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>Species</th>
+    <th>Legs</th>
+    <th>Arms</th>
+    <th>Eye Color</th>
+  </tr>
+
+</table>
+
+<script type="text/javascript">
+
+    // var person = {
+    //     firstName: "John",
+    //     lastName: "Doed",
+    //     age: 150,
+    //     legs: 2,
+    //     arms: 2,
+    //     eyeColor: "blue",
+    //     age: 150,
+    //     species: "human",
+    //     isAlive: function(){
+    //       if (this.age < 150){
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     }
+    // }
+
+
+
+    var Person = function(firstName, lastName, age, eyeColor) {
+        this.firstName = firstName,
+        this.lastName = lastName,
+        this.eyeColor = eyeColor,
+        this.legs = 2,
+        this.arms = 2,
+        this.age = age,
+        this.species = "human",
+        this.isAlive = function(){
+            if (this.age < 150){
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
+var person1 = new Person("Mike", "Jones", 100, "Blue");
+var person2 = new Person("Jane", "Jackson", 200, "Green");
+var person3 = new Person("Steve", "Murphy", 300, "Blue");
+var person4 = new Person("Susan", "Chan", 350, "Brown");
+var person5 = new Person("Abby", "Smith", 50, "Grey");
+var person6 = new Person("Chris", "Mourning", 25, "Brown");
+
+var peoples = [person1, person2, person3, person4, person5, person6];
+console.log(peoples);
+
+var personRowsHtml = "";
+
+for (var i = peoples.length - 1; i >= 0; i--) {
+
+    personRowsHtml += "<tr>" +
+                                         "<td>"+peoples[i].firstName+"</td>"+
+                                         "<td>"+peoples[i].lastName+"</td>"+
+                                         "<td>"+peoples[i].age+"</td>"+
+                                         "<td>"+peoples[i].species+"</td>" +
+                                         "<td>"+peoples[i].legs+"</td>"+
+                                         "<td>"+peoples[i].arms+"</td>"+
+                                         "<td>"+peoples[i].eyeColor+"</td>"+
+                                      "</tr>";
+    console.log(personRowsHtml);
+}
+
+console.log(personRowsHtml);
+document.getElementsByTagName("table")[0]element.insertAdjecentHTML("beforeend", personRowsHtml);
+</script>
+
+</body>
+</html>

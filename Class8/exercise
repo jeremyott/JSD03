@@ -1,0 +1,34 @@
+var friends = {
+  friend1: {
+    first: "John",
+    last: "Jones"
+  },
+  friend2: {
+    first: "Molly",
+    last: "Moe"
+  }
+}
+
+friends.friendd2.first + " " + friends.friend2.last;
+
+var bookStore = {
+books: [
+{
+title: "columbo", author: "jon"
+},
+{title: "columba", author: "jom"}
+]
+book_count: function(){
+  return this.books.length;
+},
+authors: function(){
+  return this.books.map(function(book){
+    return book.author
+  })
+  add_book: function(author, title){
+    var newBook = {title: title, author: author
+    }
+    this.books.push({title: title, author: cat})
+  }
+}
+}
