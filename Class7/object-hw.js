@@ -37,14 +37,15 @@ function getDescription(houseNum, personNum) {
   for (var i = 0; i < gameOfThronesHouses.length; i++) {
     if (gameOfThronesHouses[i+1] === gameOfThronesHouses[houseNum]){
       var houseName = gameOfThronesHouses[i].name;
-      var persName = gameOfThronesHouses[i].people[personNum].description;
+      var persName = gameOfThronesHouses[i].people[personNum - 1].description;
       return [houseName, persName]
     }
   }
 }
-
 // 5.  Get a list of all the houses names
-
+function houseNames(){
+  for (var i = 0; i , )
+}
 
 // 6.  Get a list of all the peoples names
 
