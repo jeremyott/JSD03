@@ -3,8 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style>
+    main {
+      background: #009bdf;
+      color: white;
+      font-family: arial;
+    }
+    .hide {disp1lay: block;}
+    .show {display: block;}
+    </style>
   </head>
   <body>
+
     <script type="text/javascript">
 
     // user select rocks, paper or scissors
@@ -27,7 +37,7 @@
         return computerSelection;
     }
 
-    // Get winnder
+    // Get winner
     function getWinner(computer, user){
         if (computer === user ) {
             return "Tie";
@@ -65,16 +75,28 @@
         }
 
         if (userScore > computerScore){
-            alert("User wons game.  Score: Computer-" + computerScore + " User-" + userScore);
+            //alert("User wons game.  Score: Computer-" + computerScore + " User-" + userScore);
+            document.getElementById("win").className="show";
         } else{
-            alert("Computer wons game.  Score: Computer-" + computerScore + " User-" + userScore);
+            //alert("Computer wons game.  Score: Computer-" + computerScore + " User-" + userScore);
+            document.getElementById("lose").className="show";
         }
 
     }
 
     </script>
     <main>
-<button onClick="playTournament" id="start-game" type="button" name="button">Start Game Now</button>
+      <button onClick="playTournament()" id="start-game" type="button" name="button">Start Game Now</button>
+      <div style="width: 100%;">
+        <div style="margin: 0 auto;">
+          <div id="win" class="hide" style="text-align: center;">
+            <h1> Congratulations! </br> You Win!</h1>
+          </div>
+          <div id="lose" class="hide" style="text-align: center;">
+            <h1> Sorry! </br> You lose!</h1>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
