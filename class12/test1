@@ -1,0 +1,28 @@
+#input_1_8 {
+height: 35px !important;
+    padding: 5px 0 5px 8px !important;
+    border-radius: 1px !important;
+    background: #fff !important;
+    font-size: 14px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-shadow: 0 0 3px #fff inset,0 1px 1px rgba(0,0,0,.1) !important;
+    color: #444 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    line-height: 24px !important;
+    border: 1px solid #AAA !important;
+}
+#field_1_8 .ginput_container.ginput_container_select {
+margin-top: 20px !important;
+}
+#input_1_8_chosen {
+}
+@media only screen and (min-width: 641px){
+.gform_wrapper .top_label li.gfield.gfield_error.gf_left_half {
+margin-right: 8px !important;
+}}
+@media only screen and (min-width: 641px){
+.gform_wrapper .top_label li.gfield.gfield_error.gf_left_half, .gform_wrapper .top_label li.gfield.gfield_error.gf_right_half {
+    width: calc(48% - 8px) !important;
+}}

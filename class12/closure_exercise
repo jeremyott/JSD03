@@ -1,0 +1,13 @@
+var a = 1
+
+function foo() {
+  console.log(a)
+}
+foo()
+
+function bar() {
+var b = 'local value'
+console.lof(b)
+}
+bar()
+console.log(b)
