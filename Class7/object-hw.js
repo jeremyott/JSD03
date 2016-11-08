@@ -44,11 +44,15 @@ function getDescription(houseNum, personNum) {
 }
 // 5.  Get a list of all the houses names
 function houseNames(){
-  for (var i = 0; i , )
+  for (var i = 0; i<gameOfThronesHouses.length; i++)
+  console.log(gameOfThronesHouses[i].name);
 }
 
 // 6.  Get a list of all the peoples names
-
+function peopleNames(){
+  for (var i = 0; i<gameOfThronesHouses.length; i++)
+  console.log(gameOfThronesHouses[i].people[0].name);
+}
 
 var gameOfThronesHouses = [
     {
